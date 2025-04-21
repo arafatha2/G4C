@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Montserrat font-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
   </head>
-  <body>   
-    <section>
-      <!-- MOBILE NAVIGATION -->
-      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
-        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Bite Right</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
-      </div>
-      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-        <a href="#pitch" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PITCH</a>
-        <a href="#theme" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">THEME</a>
-        <a href="#why" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">WHY</a>
-      </div>
+  <body>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+      <a href="#home" class="w3-bar-item w3-button w3-hover-none">Bite Right</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+      <a href="#pitch" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PITCH</a>
+      <a href="#theme" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">THEME</a>
+      <a href="#why" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">WHY</a>
+    </div>
 
-      <!-- SOCIAL SECTION -->
-      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+    <!-- LAYOUT START -->
+    <div class="main-layout">
+      <!-- SIDEBAR SECTION -->
+      <section class="image-section w3-quarter w3-padding-small">
         <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;" />
         <div class="links w3-margin-top w3-padding-small">
           <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
-             <i data-feather="linkedin"></i>
+            <i data-feather="linkedin"></i>
           </a>
         </div>
       </section>
 
-      <!-- CONTENT SECTION -->
+      <!-- MAIN CONTENT -->
       <section class="w3-threequarter w3-padding-large w3-right">
         <!-- DESKTOP NAVIGATION -->
         <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
@@ -59,10 +59,6 @@
           <!-- GAME EMBED SECTION -->
           <div class="w3-margin-top-4">
             <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/lyU6tT0EoPligFHHRCSyXN-4JPfKBAT9Wkm3Ey0pVCM/embed"></iframe>
-            <!-- Optional video example if you have it -->
-            <!-- <video width="1000" height="740" controls>
-              <source src="movie.mp4" type="video/mp4">
-            </video> -->
           </div>
 
           <!-- PITCH SECTION -->
@@ -90,7 +86,7 @@
           </div>
         </div>
       </section>
-    </section>
+    </div>
 
     <!-- JAVASCRIPT -->
     <script>
