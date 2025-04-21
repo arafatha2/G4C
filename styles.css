@@ -19,15 +19,18 @@ h4 {
   min-height: 100vh;
 }
 .image-section {
-  background: linear-gradient(135deg, #001f54, #003366); /* ← YOUR COLOR */
+  background: linear-gradient(135deg, #001f54, #003366);
   background-image: radial-gradient(white 1px, transparent 1px);
   background-size: 20px 20px;
   position: sticky;
   top: 0;
-  align-self: flex-start;
   height: 100vh;
-  overflow: auto;
+  padding: 24px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 .image-section img {
   max-width: 80%;
@@ -46,7 +49,7 @@ h4 {
   color: #ffcc00;
 }
 .content-container {
-  width: 70%;
+  width: 100%;
   padding: 64px;
   animation: fadeIn 1s ease-in;
 }
