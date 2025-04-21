@@ -19,7 +19,7 @@ h4 {
   min-height: 100vh;
 }
 .image-section {
-  background: linear-gradient(135deg, #001f54, #003366);
+  background: linear-gradient(135deg, #001f54, #003366); /* ← YOUR COLOR */
   background-image: radial-gradient(white 1px, transparent 1px);
   background-size: 20px 20px;
   position: sticky;
@@ -27,6 +27,7 @@ h4 {
   align-self: flex-start;
   height: 100vh;
   overflow: auto;
+  color: white;
 }
 .image-section img {
   max-width: 80%;
