@@ -7,48 +7,98 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
-  <body>
-    <div class="main-layout">
-      <div class="image-section">
-        <img src="avatar.png" alt="Avatar">
-        <a class="icon-link" href="#linkedin" target="_blank"><i data-feather="linkedin"></i></a>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Bite Right</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
       </div>
-      <div class="content-container">
-        <div class="home" id="home">
-          <center>
-            <p>“Bite right, feel bright. Skip the junk and snack with delight!”</p>
-            <h1>Bite Right</h1>
-            <h2>Arafath Ahmed (HS Junior)</h2>
-            <h3>Game Designing Learner</h3>
-          </center>
-        </div>
-        <div class="game-section w3-margin-top-4">
-          <iframe src="https://studio.code.org/projects/applab/lyU6tT0EoPligFHHRCSyXN-4JPfKBAT9Wkm3Ey0pVCM/embed"></iframe>
-        </div>
-        <div id="pitch" class="w3-container w3-margin-top-4">
-          <h2 class="w3-border-bottom w3-border-amber">PITCH</h2>
-          <p>Ignore the junk, accept the veggies, and level up in a food decision game named <strong>Bite Right!</strong> Choose between healthy food or junk food and progress based on your decisions. Bright visuals and fun gameplay promote healthy eating habits. Will you “Bite Right”?</p>
-        </div>
-        <div id="theme" class="w3-container w3-margin-top-4">
-          <h2 class="w3-border-bottom w3-border-amber">THEME</h2>
-          <p><strong>Bite Right</strong> fits the “Nurture Yourself With Nature” theme by encouraging better eating habits. Choose wisely in a swipe-based game: right for healthy, left for junk. Score points and track progress through an engaging profile system.</p>
-        </div>
-        <div id="why" class="w3-container w3-margin-top-4">
-          <h2 class="w3-border-bottom w3-border-amber">MY WHY</h2>
-          <p>I created <strong>Bite Right</strong> because I used to struggle with unhealthy food choices. That led to dental surgeries and other risks. Through this game, I want to help others make smarter food decisions while having fun!</p>
-        </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#pitch" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PITCH</a>
+        <a href="#theme" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">THEME</a>
+        <a href="#why" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">WHY</a>
       </div>
-    </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;" />
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- CONTENT SECTION -->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!-- DESKTOP NAVIGATION -->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">GAME</a>
+          <a href="#why" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small">WHY</a>
+          <a href="#theme" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small">THEME</a>
+          <a href="#pitch" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small">PITCH</a>
+        </div>
+
+        <div class="content-container w3-margin-top-2">
+          <!-- HOME SECTION -->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <center>
+              <p style="font-style: italic; font-size:x-large;">“Bite right, feel bright. Skip the junk and snack with delight!”</p>
+              <h1>Bite Right</h1>
+              <h2>Arafath Ahmed (HS Junior)</h2>
+              <h3>Game Designing Learner</h3>
+            </center>
+          </div>
+
+          <!-- GAME EMBED SECTION -->
+          <div class="w3-margin-top-4">
+            <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/lyU6tT0EoPligFHHRCSyXN-4JPfKBAT9Wkm3Ey0pVCM/embed"></iframe>
+            <!-- Optional video example if you have it -->
+            <!-- <video width="1000" height="740" controls>
+              <source src="movie.mp4" type="video/mp4">
+            </video> -->
+          </div>
+
+          <!-- PITCH SECTION -->
+          <div id="pitch" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PITCH</h2>
+            <p class="w3-margin-top-2"> 
+              Ignore the junk, accept the veggies, and level up in a food decision game named <strong>Bite Right!</strong> Players will have a choice between healthy food or junk food. Depending on their choice, they will either progress or fail. What are YOU gonna choose? With bright and beautiful visuals, <em>Bite Right</em> helps you learn about healthy eating habits in a fun, fast-paced way. Food facts, quick rounds, and cool visuals make this more than just a game—it’s a tasty challenge for your brain! Will you “Bite Right”?
+            </p>
+          </div>
+
+          <!-- THEME SECTION -->
+          <div id="theme" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">THEME</h2>
+            <p class="w3-margin-top-2"> 
+              <strong>Bite Right</strong> fits the “Nurture Yourself With Nature” theme by encouraging better eating habits through a simple type of game play. In the game, you choose between healthy foods and junk foods to earn points. You can swipe right if the food is healthy and swipe left if the food is unhealthy. When you choose the right option, you are awarded with 100 points. If you choose the wrong however, you don't gain or lose any points.  By doing this in the rounds given, at the end of the game where it displays your profile, it'll give your score!
+            </p>
+          </div>
+
+          <!-- MY WHY SECTION -->
+          <div id="why" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY WHY</h2>
+            <p class="w3-margin-top-2"> 
+              I made this game because growing up, I’ve always loved eating unhealthy food. It got to a bad point where it messed up my oral health and caused me to have multiple teeth surgeries. I also had high risk of other diagnoses like diabetes and high cholesterol due to my family history. Because of that, I wanted to create a game that helps others make better choices too. I created <strong>Bite Right</strong> in hopes that people can learn about food in a fun way and start eating smarter.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- JAVASCRIPT -->
     <script>
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        nav.classList.toggle('w3-show');
+      }
       feather.replace();
-      ScrollReveal().reveal('.content-container', { delay: 200, distance: '50px', origin: 'bottom', duration: 800, easing: 'ease-in-out' });
-      ScrollReveal().reveal('h2', { delay: 100, distance: '30px', origin: 'left', duration: 600 });
-      ScrollReveal().reveal('p', { delay: 200, distance: '30px', origin: 'right', duration: 600 });
     </script>
   </body>
 </html>
