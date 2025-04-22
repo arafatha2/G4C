@@ -19,8 +19,10 @@ h4 {
   min-height: 100vh;
 }
 .image-section {
-  background: linear-gradient(135deg, #001f54, #003366);
-  background-image: radial-gradient(white 1px, transparent 1px);
+  background:
+    linear-gradient(135deg, #001f54, #003366),
+    radial-gradient(white 1px, transparent 1px);
+  background-blend-mode: overlay;
   background-size: 20px 20px;
   position: sticky;
   top: 0;
